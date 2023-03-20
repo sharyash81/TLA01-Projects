@@ -1,0 +1,40 @@
+{
+    "states": "{'q0','q1q3','q2q4','q2q3','q2','q3','q4','TRAP'}",
+    "input_symbols": "{'a','b'}",
+    "transitions": {
+      "q0": {
+        "a": "q1q3",
+        "b": "TRAP"
+      },
+      "q1q3": {
+        "a": "TRAP",
+        "b": "q2q4"
+      },
+      "q2q4": {
+        "a": "q2q3",
+        "b": "TRAP"
+      },
+      "q2q3": {
+        "a": "q3",
+        "b": "q4"
+      },
+      "q2": {
+        "a": "q3",
+        "b": "TRAP"
+      },
+      "q3": {
+        "a": "TRAP",
+        "b": "q4"
+      },
+      "q4": {
+        "a": "q2",
+        "b": "TRAP"
+      },
+      "TRAP": {
+        "a": "TRAP",
+        "b": "TRAP"
+      }
+    },
+    "initial_state": "q0",
+    "final_states": "{'q1q3','q2q3','q3'}"
+}
