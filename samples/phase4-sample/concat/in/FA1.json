@@ -10,7 +10,7 @@
 
       }
     },
-    "initial_state": "q4",
-    "final_states": "{'q5'}"
+    "initial_state": "q0",
+    "final_states": "{'q1'}"
 }
 
